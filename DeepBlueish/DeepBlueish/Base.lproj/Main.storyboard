@@ -58,27 +58,27 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zrp-97-68I">
-                                <rect key="frame" x="0.0" y="44" width="375" height="456"/>
+                                <rect key="frame" x="0.0" y="59" width="375" height="418"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="2CX-hV-3Wc"/>
-                                    <constraint firstAttribute="height" constant="375" id="IqD-Un-p3Z"/>
+                                    <constraint firstAttribute="width" secondItem="zrp-97-68I" secondAttribute="height" multiplier="375:418" id="uav-CV-Dq2"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.38039215686274508" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="zrp-97-68I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="F4Q-NA-hiu"/>
+                            <constraint firstAttribute="trailing" secondItem="zrp-97-68I" secondAttribute="trailing" id="5iH-wa-i1I"/>
                             <constraint firstItem="kWi-tM-mwY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JVn-Fz-k9Z"/>
                             <constraint firstItem="7IA-by-NDA" firstAttribute="leading" secondItem="kWi-tM-mwY" secondAttribute="trailing" id="M0k-3S-ZVU"/>
                             <constraint firstItem="7IA-by-NDA" firstAttribute="height" secondItem="kWi-tM-mwY" secondAttribute="height" id="Mbu-so-uib"/>
+                            <constraint firstItem="7IA-by-NDA" firstAttribute="top" secondItem="zrp-97-68I" secondAttribute="bottom" constant="1" id="RdL-Zw-M4b"/>
                             <constraint firstAttribute="trailing" secondItem="Q7U-BM-YB5" secondAttribute="trailing" id="UOK-dy-jo5"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kWi-tM-mwY" secondAttribute="bottom" id="aQh-ma-Wc1"/>
-                            <constraint firstAttribute="trailing" secondItem="zrp-97-68I" secondAttribute="trailing" id="cjb-jr-CYZ"/>
                             <constraint firstAttribute="trailing" secondItem="7IA-by-NDA" secondAttribute="trailing" id="hQ7-5w-N5D"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7IA-by-NDA" secondAttribute="bottom" id="kEo-95-w7g"/>
                             <constraint firstItem="7IA-by-NDA" firstAttribute="leading" secondItem="kWi-tM-mwY" secondAttribute="trailing" id="l49-Z2-Ov8"/>
-                            <constraint firstItem="zrp-97-68I" firstAttribute="top" secondItem="Q7U-BM-YB5" secondAttribute="bottom" id="twe-bQ-5mc"/>
+                            <constraint firstItem="zrp-97-68I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ng7-GT-9QS"/>
                             <constraint firstItem="Q7U-BM-YB5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vN6-An-RGE"/>
+                            <constraint firstItem="zrp-97-68I" firstAttribute="top" secondItem="Q7U-BM-YB5" secondAttribute="bottom" constant="1" id="xFM-BC-15W"/>
                             <constraint firstItem="Q7U-BM-YB5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ymF-Xc-nFe"/>
                         </constraints>
                     </view>

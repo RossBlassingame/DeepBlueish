@@ -48,4 +48,4 @@ Add additional notes about how to deploy this on a live system
 * **Ross Blassingame** - *TicTacToe Algorithm* - [GitHub](https://github.com/RossBlassingame)
 * **Xi Gao** - *Graphics* - [GitHub](https://github.com/d8withf8)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/RossBlassingame/DeepBlueish/graphs/contributors) who participated in this project.

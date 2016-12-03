@@ -44,6 +44,8 @@ Add additional notes about how to deploy this on a live system
 
 ## Authors
 
-* **Ross Blassingame** - *Tic-Tac-Toe Algorithm* - [GitHub](https://github.com/RossBlassingame)
+* **Michael Tang** - *iOS development | Image Recognition* - [GitHub](https://github.com/mita4829)
+* **Ross Blassingame** - *TicTacToe Algorithm* - [GitHub](https://github.com/RossBlassingame)
+* **Xi Gao** - *Graphics* - [GitHub](https://github.com/d8withf8)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.

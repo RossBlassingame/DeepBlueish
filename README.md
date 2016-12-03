@@ -44,6 +44,6 @@ Add additional notes about how to deploy this on a live system
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Ross Blassingame** - *Tic-Tac-Toe Algorithm* - [GitHub](https://github.com/RossBlassingame)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +21,74 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q7U-BM-YB5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="iZd-hV-cus"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="DeepBlueish" id="hGE-DN-MMs"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWi-tM-mwY">
+                                <rect key="frame" x="0.0" y="501" width="184" height="166"/>
+                                <color key="backgroundColor" red="0.11764705882352941" green="0.49803921568627452" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kWi-tM-mwY" secondAttribute="height" multiplier="92:83" id="jhR-Ov-0Vx"/>
+                                </constraints>
+                                <state key="normal" title="Take Photo">
+                                    <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D85-PR-T4R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7IA-by-NDA">
+                                <rect key="frame" x="191" y="501" width="184" height="166"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.49803921569999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7IA-by-NDA" secondAttribute="height" multiplier="92:83" id="4Ph-Aj-H3a"/>
+                                </constraints>
+                                <state key="normal" title="Import Image">
+                                    <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="importImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tbK-B7-HGk"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zrp-97-68I">
+                                <rect key="frame" x="0.0" y="44" width="375" height="456"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="2CX-hV-3Wc"/>
+                                    <constraint firstAttribute="height" constant="375" id="IqD-Un-p3Z"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.38039215686274508" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zrp-97-68I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="F4Q-NA-hiu"/>
+                            <constraint firstItem="kWi-tM-mwY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JVn-Fz-k9Z"/>
+                            <constraint firstItem="7IA-by-NDA" firstAttribute="leading" secondItem="kWi-tM-mwY" secondAttribute="trailing" id="M0k-3S-ZVU"/>
+                            <constraint firstItem="7IA-by-NDA" firstAttribute="height" secondItem="kWi-tM-mwY" secondAttribute="height" id="Mbu-so-uib"/>
+                            <constraint firstAttribute="trailing" secondItem="Q7U-BM-YB5" secondAttribute="trailing" id="UOK-dy-jo5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kWi-tM-mwY" secondAttribute="bottom" id="aQh-ma-Wc1"/>
+                            <constraint firstAttribute="trailing" secondItem="zrp-97-68I" secondAttribute="trailing" id="cjb-jr-CYZ"/>
+                            <constraint firstAttribute="trailing" secondItem="7IA-by-NDA" secondAttribute="trailing" id="hQ7-5w-N5D"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7IA-by-NDA" secondAttribute="bottom" id="kEo-95-w7g"/>
+                            <constraint firstItem="7IA-by-NDA" firstAttribute="leading" secondItem="kWi-tM-mwY" secondAttribute="trailing" id="l49-Z2-Ov8"/>
+                            <constraint firstItem="zrp-97-68I" firstAttribute="top" secondItem="Q7U-BM-YB5" secondAttribute="bottom" id="twe-bQ-5mc"/>
+                            <constraint firstItem="Q7U-BM-YB5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vN6-An-RGE"/>
+                            <constraint firstItem="Q7U-BM-YB5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ymF-Xc-nFe"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="photo" destination="zrp-97-68I" id="HHf-iW-gw9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="50.824587706146929"/>
         </scene>
     </scenes>
 </document>
